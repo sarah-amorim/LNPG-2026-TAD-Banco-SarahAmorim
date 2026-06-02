@@ -45,8 +45,6 @@ print(Sarah.getTelefone())
 
 
 """
-
-
 void alterarTelefone(String telefone)
 
 Atualiza o telefone do cliente.
