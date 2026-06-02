@@ -22,7 +22,10 @@ class Cliente:
             print("E-mail inválido.")
    
 
+Pedro = Cliente("Pedro", "12345678901", "1234567890", "pedro123@email.com")
+Sarah = Cliente("Sarah", "11122233344", "9876543210", "sarah@email.com")
 
+print(Sarah)
     
 
 
