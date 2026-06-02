@@ -14,19 +14,22 @@ class Cliente:
             print("CPF inválido.")
 
     def telefone():
-        if self.telefone is not None and (len(self.telefone) < 10 or len(self.telefone) > 11:
+        if self.telefone is not None and (len(self.telefone)) < 10 or len(self.telefone) > 11:
             print("Telefone inválido.")
 
     def email():
         if self.email is not None and '@' not in self.email:
             print("E-mail inválido.")
+
+    def getNome(self):
+        return self.nome
    
 
 Pedro = Cliente("Pedro", "12345678901", "1234567890", "pedro123@email.com")
 Sarah = Cliente("Sarah", "11122233344", "9876543210", "sarah@email.com")
 
 print(Sarah)
-    
+print(Pedro.getNome())
 
 
 
@@ -35,14 +38,6 @@ print(Sarah)
 Cliente(String nome, String cpf)
 
 Cria um cliente contendo nome e CPF.
-
-Cliente(String nome, String cpf, String telefone, String email)
-
-Cria um cliente contendo todos os dados disponíveis.
-
-String getNome()
-
-Retorna o nome do cliente.
 
 String getCpf()
 
