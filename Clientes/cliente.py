@@ -23,6 +23,16 @@ class Cliente:
 
     def getNome(self):
         return self.nome
+
+    def getCpf(self):
+        return self.cpf
+
+
+    def getTelefone(self):
+        return self.telefone
+
+    def getEmail(self):
+        return self.email
    
 
 Pedro = Cliente("Pedro", "12345678901", "1234567890", "pedro123@email.com")
@@ -30,26 +40,12 @@ Sarah = Cliente("Sarah", "11122233344", "9876543210", "sarah@email.com")
 
 print(Sarah)
 print(Pedro.getNome())
-
-
+print(Sarah.getCpf())
+print(Sarah.getTelefone())
 
 
 """
-Cliente(String nome, String cpf)
 
-Cria um cliente contendo nome e CPF.
-
-String getCpf()
-
-Retorna o CPF do cliente.
-
-String getTelefone()
-
-Retorna o telefone do cliente.
-
-String getEmail()
-
-Retorna o e-mail do cliente.
 
 void alterarTelefone(String telefone)
 
