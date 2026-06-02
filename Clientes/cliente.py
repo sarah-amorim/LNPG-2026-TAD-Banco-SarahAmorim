@@ -13,25 +13,53 @@ class Cliente:
         if self.cpf is None or self.cpf == "" or len(self.cpf) != 11:
             print("CPF inválido.")
 
+    def telefone():
+        if self.telefone is not None and (len(self.telefone) < 10 or len(self.telefone) > 11:
+            print("Telefone inválido.")
+
+    def email():
+        if self.email is not None and '@' not in self.email:
+            print("E-mail inválido.")
+   
+
+
     
 
 
 
 
 """
-O telefone é opcional.
+Cliente(String nome, String cpf)
 
-Quando informado, deve possuir entre 10 e 11 dígitos numéricos.
+Cria um cliente contendo nome e CPF.
 
-Caso um telefone inválido seja informado, o sistema não deve armazená-lo.
+Cliente(String nome, String cpf, String telefone, String email)
 
-E-mail
-O e-mail é opcional.
+Cria um cliente contendo todos os dados disponíveis.
 
-Quando informado, deve conter o caractere '@'.
+String getNome()
 
-Caso um e-mail inválido seja informado, o sistema não deve armazená-lo.
+Retorna o nome do cliente.
 
+String getCpf()
+
+Retorna o CPF do cliente.
+
+String getTelefone()
+
+Retorna o telefone do cliente.
+
+String getEmail()
+
+Retorna o e-mail do cliente.
+
+void alterarTelefone(String telefone)
+
+Atualiza o telefone do cliente.
+
+void alterarEmail(String email)
+
+Atualiza o e-mail do cliente.
 """
 
 
